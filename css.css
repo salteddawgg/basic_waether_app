@@ -17,7 +17,7 @@ body {
 }
 
 #main-container {
-  background-color: steelblue;
+  background-color: steelblue; /* very demure color */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -120,6 +120,7 @@ input[type="text"]::placeholder {
   left: 17.3rem;
 }
 
+/* this took so long to get how i like it, drove me insane*/
 .weather-details {
   display: flex;
   flex-direction: column;
@@ -140,11 +141,12 @@ input[type="text"]::placeholder {
 }
 
 .feels-like::after {
-  content: "\00B0 F";
+  content: " \00B0 F";
   position: absolute;
   bottom: 1.1rem;
   left: 11.4rem;
   font-size: 1rem;
+  margin-left: 10px; /* Adds 10px of margin on all sides */
 }
 
 .humidity::after {
